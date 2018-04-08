@@ -1,6 +1,7 @@
 //increment
 
-export function increment(indexe) {
+export function increment(index) {
+    console.log('like increment');
     return {
         type: 'INCREMENT_LIKES',
         index
