@@ -3,10 +3,8 @@
 // 2. copy of current state
 
 function posts(state = [], action) {
-    console.log(state, action)
     switch(action.type) {
         case 'INCREMENT_LIKES':
-            console.log('INCREMENTing LIKES!!!!');
             const i = action.index;
             return [
                 ...state.slice(0, i), //before the one we are updating
